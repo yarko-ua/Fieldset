@@ -394,10 +394,10 @@ padding: 0;
 
 @media screen and (max-width:1375px) {
     .puzzle__block {
-    width: 360px;
+    width: 365px;
     min-width: 310px;
     } 
     .puzzle__block--joint-big, .puzzle__block--label-big{
-        width: 490px;
+        width: 495px;
     } 
 }
