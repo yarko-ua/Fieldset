@@ -10,12 +10,13 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico|Raleway:300,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="web/image/favicon.jpg" type="image/x-icon">
 </head>
 
 <body>
     <section>
         <!--HEADER-->
-        <div class="header header--flex">
+        <div class="header header--flex" id="header">
             <div class="header__logo">
                 <img src="web/image/logo.svg" alt="logo">
             </div>
@@ -26,7 +27,9 @@
                     design and product management.</p>
             </div>
             <div class="header__scroll">
-                <img src="web/image/scroll.svg" alt="mouse">
+                <a href="#contact_us">
+                    <img src="web/image/scroll.svg" alt="mouse">
+                </a>
             </div>
         </div>
         <!--About Us-->
@@ -93,34 +96,75 @@
             </fieldset>
         </div>
         <!--Puzzle-->
-        <div class="puzzle">
-            <div class="puzzle__block">
-                <img src="web/image/top left.jpg" alt="">
-                <span class="puzzle__title">topworkz</span>
+        <div class="puzzle puzzle--flex">
+            <div class="puzzle__block puzzle__block--topworkz">
+                <!--<img src="web/image/top left.jpg" alt="">-->
+                <p class="puzzle__title">
+                    <span class="puzzle__title--color-green">t</span>
+                    <span class="puzzle__title--color-red">o</span>
+                    <span class="puzzle__title--color-blue">p</span>
+                    <span class="puzzle__title--color-purple">w</span>
+                    <span class="puzzle__title--color-black">o</span>
+                    <span class="puzzle__title--color-yellow">r</span>
+                    <span>k</span>
+                    <span class="puzzle__title--color-green">z</span>
+                </p>
             </div>
-            <div class="puzzle__block puzzle__block--big">
-                <img src="web/image/top center.jpg" alt="">
-                <span class="puzzle__title">joint</span>
+            <div class="puzzle__block puzzle__block--joint-big">
+                <!--<img src="web/image/top center.jpg" alt="">-->
+                <p class="puzzle__title">
+                    <span class="puzzle__title--color-green">j</span>
+                    <span class="puzzle__title--color-red">o</span>
+                    <span class="puzzle__title--color-blue">i</span>
+                    <span class="puzzle__title--color-purple">n</span>
+                    <span class="puzzle__title--color-black">t</span>
+                </p>
             </div>
-            <div class="puzzle__block">
-                <img src="web/image/top right.jpg" alt="">
-                <span class="puzzle__title">market</span>
+            <div class="puzzle__block puzzle__block--market">
+                <!--<img src="web/image/top right.jpg" alt="">-->
+                <p class="puzzle__title">
+                    <span class="puzzle__title--color-green">m</span>
+                    <span class="puzzle__title--color-red">a</span>
+                    <span class="puzzle__title--color-blue">r</span>
+                    <span class="puzzle__title--color-purple">k</span>
+                    <span class="puzzle__title--color-black">e</span>
+                    <span class="puzzle__title--color-yellow">t</span>
+                </p>
             </div>
-            <div class="puzzle__block">
-                <img src="web/image/bottom left.jpg" alt="">
-                <span class="puzzle__title">worktop</span>
+            <div class="puzzle__block puzzle__block--worktop">
+                <!--<img src="web/image/bottom left.jpg" alt="">-->
+                <p class="puzzle__title">
+                    <span class="puzzle__title--color-green">w</span>
+                    <span class="puzzle__title--color-red">o</span>
+                    <span class="puzzle__title--color-blue">r</span>
+                    <span class="puzzle__title--color-purple">k</span>
+                    <span class="puzzle__title--color-black">t</span>
+                    <span class="puzzle__title--color-yellow">o</span>
+                    <span class="puzzle__title--color-green">p</span>
+                </p>
             </div>
-            <div class="puzzle__block puzzle__block--big">
-                <img src="web/image/bottom center.jpg" alt="">
-                <span class="puzzle__title">label</span>
+            <div class="puzzle__block puzzle__block--label-big">
+                <!--<img src="web/image/bottom center.jpg" alt="">-->
+                <p class="puzzle__title">
+                    <span class="puzzle__title--color-green">l</span>
+                    <span class="puzzle__title--color-red">a</span>
+                    <span class="puzzle__title--color-blue">b</span>
+                    <span class="puzzle__title--color-purple">e</span>
+                    <span class="puzzle__title--color-yellow">l</span>
+                </p>
             </div>
-            <div class="puzzle__block">
-                <img src="web/image/bottom right.jpg" alt="">
-                <span class="puzzle__title">kyiv</span>
+            <div class="puzzle__block puzzle__block--kyiv">
+                <!--<img src="web/image/bottom right.jpg" alt="">-->
+                <p class="puzzle__title">
+                    <span class="puzzle__title--color-green">k</span>
+                    <span class="puzzle__title--color-red">y</span>
+                    <span class="puzzle__title--color-blue">i</span>
+                    <span class="puzzle__title--color-purple">v</span>
+                </p>
             </div>
         </div>
         <!--Contact Us-->
-        <div class="contact-us">
+        <div class="contact-us" id="contact_us">
             <fieldset class="contact-us__fieldset">
                 <legend class="contact-us__legend">contact us</legend>
                 <p class="contact-us__text">
@@ -131,7 +175,7 @@
                 <button class="contact-us__button"> contact us</button>
             </fieldset>
             <div class="cotact-us__footer">
-                <img src="web/image/logosmall.png" alt="logo">
+                <a href="#header"><img src="web/image/logosmall.png" alt="logo"></a>
                 <span> &copy; 2014. All Rights Reserved Ellipsis.com</span>
             </div>
         </div>

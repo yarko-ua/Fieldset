@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -17,6 +18,7 @@
     justify-content: flex-start;
     color: #fff;
     font-family:'Lato', sans-serif;
+    text-align: center;
 }
 
 .header__logo{
@@ -65,7 +67,7 @@
 
 .about-us__fieldset{
     max-width: 903px;
-    min-width: 320px;
+    min-width: 315px;
     min-height: 330px;
     font-size: 16px;
     font-weight: 300;
@@ -116,7 +118,7 @@
 
 .services__fieldset{
     max-width: 903px;
-    min-width: 320px;
+    min-width: 315px;
     min-height: 250px;
     font-size: 16px;
     font-weight: 300;
@@ -155,7 +157,7 @@
 
 .what-we-do__fieldset{
     max-width: 903px;
-    min-width: 320px;
+    min-width: 315px;
     min-height: 1200px;
     font-size: 14px;
     font-weight: 300;
@@ -203,8 +205,8 @@
 
 /* Our works */
 
-.puzzle {
-    min-height: 492px;
+.puzzle--flex {
+    min-height: 475px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -214,26 +216,22 @@
 .puzzle__block {
     position: relative;
     height: 237px;
-    max-width: 543px;
-    margin: 5px 0px;
-    flex-grow: 1.6;
-    flex-basis: 543px;
+    width: 548px;
+    min-width: 320px;
+    border: 5px solid #fff;
 }
-
+/*
 .puzzle__block img {
-    max-width: 543px;
+    width: 100%;
+    height: 237px;
 }
-
-.puzzle__block--big {
-    max-width: 793px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
+*/
+/*
 .puzzle__block--big img {
-max-width: 793px;
+width: 100%;
+height: 237px;
 }
-
+*/
 .puzzle__title {
     position: absolute;
     left: 47px;
@@ -241,10 +239,80 @@ max-width: 793px;
     font-size: 34px;
     font-weight: 700;
     color: #fff;
-    letter-spacing: 5px;
     text-transform: uppercase;
 }
+.puzzle__block:hover {
+    cursor: pointer;
+}
+.puzzle__title span{
+margin: 0 ;
+margin-left: -5px;
+padding: 0;
+}
 
+.puzzle__block:hover .puzzle__title--color-green{
+    color: green;
+}
+.puzzle__block:hover .puzzle__title--color-red {
+    color:red ;
+}
+.puzzle__block:hover .puzzle__title--color-blue {
+    color: blue;
+}
+.puzzle__block:hover .puzzle__title--color-purple{
+    color: purple;
+}
+.puzzle__block:hover .puzzle__title--color-black {
+    color: black;
+}
+.puzzle__block:hover .puzzle__title--color-yellow {
+    color: yellow;
+}
+
+
+.puzzle__block--topworkz {
+    background-image: url(web/image/top\ left.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-grow: 1.2;
+    
+}
+.puzzle__block--joint-big{
+    background-image: url(web/image/top\ center.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 803px;
+    flex-grow: 1;
+
+}
+.puzzle__block--market {
+    background-image: url(web/image/top\ right.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1.2;
+   
+}
+.puzzle__block--worktop {
+    background-image: url(web/image/bottom\ left.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1.2;
+   
+}
+.puzzle__block--label-big{
+    background-image: url(web/image/bottom\ center.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 803px;
+    flex-grow: 1;
+}
+.puzzle__block--kyiv{
+    background-image: url(web/image/bottom\ right.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1.2;
+}
 /* Contact Us */
 
 .contact-us {
@@ -255,7 +323,7 @@ max-width: 793px;
 
 .contact-us__fieldset{
     max-width: 903px;
-    min-width: 320px;
+    min-width: 315px;
     min-height: 300px;
     font-size: 16px;
     font-weight: 300;
@@ -289,10 +357,19 @@ max-width: 793px;
     height: 58px;
     border: transparent;
     font-weight: 400;
+    margin: 0 auto;
     margin-top: 40px ;
     margin-bottom: 50px;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 3px;
+}
+
+.contact-us__button:hover {
+    transform: rotateX(360deg);
+    background-color: transparent;
+    color: green;
+    transition: all 0.5s;
 }
 
 .cotact-us__footer{
@@ -307,4 +384,20 @@ max-width: 793px;
 
 .cotact-us__footer img {
     padding-right: 30px;
+}
+
+@media screen and (max-width:799px) {
+    .contact-us__button{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:1375px) {
+    .puzzle__block {
+    width: 360px;
+    min-width: 310px;
+    } 
+    .puzzle__block--joint-big, .puzzle__block--label-big{
+        width: 490px;
+    } 
 }
