@@ -275,7 +275,7 @@ padding: 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    flex-grow: 1.2;
+    flex-grow: 1.1;
     
 }
 .puzzle__block--joint-big{
@@ -290,14 +290,14 @@ padding: 0;
     background-image: url(web/image/top\ right.jpg);
     background-size: cover;
     background-position: center;
-    flex-grow: 1.2;
+    flex-grow: 1.1;
    
 }
 .puzzle__block--worktop {
     background-image: url(web/image/bottom\ left.jpg);
     background-size: cover;
     background-position: center;
-    flex-grow: 1.2;
+    flex-grow: 1.1;
    
 }
 .puzzle__block--label-big{
@@ -311,7 +311,7 @@ padding: 0;
     background-image: url(web/image/bottom\ right.jpg);
     background-size: cover;
     background-position: center;
-    flex-grow: 1.2;
+    flex-grow: 1.1;
 }
 /* Contact Us */
 
@@ -394,10 +394,10 @@ padding: 0;
 
 @media screen and (max-width:1375px) {
     .puzzle__block {
-    width: 365px;
+    width: 350px;
     min-width: 310px;
     } 
     .puzzle__block--joint-big, .puzzle__block--label-big{
-        width: 495px;
+        width: 510px;
     } 
 }
